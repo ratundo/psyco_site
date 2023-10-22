@@ -429,6 +429,12 @@ template {
 body {
   max-width: 1440px;
 }
+body h1, body h2, body h3, body h4, body h5, body h6 {
+  font-family: Oswald;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+}
 
 .center {
   margin-left: calc(50vw - 555px);
@@ -462,6 +468,54 @@ header a {
 header a:hover {
   color: #6DE1E3;
   border-bottom: 2px solid #6DE1E3;
+}
+
+.offer {
+  height: 768px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-between;
+  gap: 63px;
+}
+.offer img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.offer h1 {
+  max-width: 464px;
+  font-size: 48px;
+  line-height: 72px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.offer h2 {
+  max-width: 300px;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.offer button {
+  width: 250px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #2D5E5E;
+  color: white;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  border: none;
+}
+.offer button:hover {
+  color: aqua;
 }
 
 /*# sourceMappingURL=style.css.map */
