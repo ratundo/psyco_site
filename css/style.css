@@ -428,6 +428,8 @@ template {
 }
 body {
   max-width: 1440px;
+  margin: 0;
+  padding: 0;
 }
 body h1, body h2, body h3, body h4, body h5, body h6 {
   font-family: Oswald;
@@ -483,6 +485,7 @@ header a:hover {
   top: 0;
   left: 0;
   z-index: -1;
+  margin: 0;
 }
 .offer h1 {
   max-width: 464px;
@@ -516,6 +519,37 @@ header a:hover {
 }
 .offer button:hover {
   color: aqua;
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+  gap: 90px;
+  padding-top: 60px;
+  margin-bottom: 30px;
+}
+.services__item {
+  text-align: center;
+  max-width: 300px;
+}
+.services__item img {
+  width: 56px;
+  height: 56px;
+  color: #4A5E5E;
+}
+.services__item h3 {
+  font-family: Oswald;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0em;
+  color: #2D5E5E;
+}
+.services__item p {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
 }
 
 /*# sourceMappingURL=style.css.map */
