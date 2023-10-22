@@ -426,9 +426,42 @@ template {
   font-style: normal;
   font-display: swap;
 }
+body {
+  max-width: 1440px;
+}
+
 .center {
   margin-left: calc(50vw - 555px);
   margin-right: calc(50vw - 555px);
+}
+
+.push {
+  margin-left: auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+header a {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-decoration: none;
+  color: #85AAAB;
+}
+header a:hover {
+  color: #6DE1E3;
+  border-bottom: 2px solid #6DE1E3;
 }
 
 /*# sourceMappingURL=style.css.map */
