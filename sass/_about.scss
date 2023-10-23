@@ -33,7 +33,7 @@
     height: 40px;
     border-radius: 10px;
     border: solid 3px #2D5E5E;
-    background-color: #2D5E5E;
+    background-color: transparent;
     color: white;
     font-family: Montserrat;
     font-size: 18px;
@@ -44,7 +44,7 @@
     }
 
     & button:hover { 
-        background-color: transparent;
+        background-color: #2D5E5E;
     }
 }
 
