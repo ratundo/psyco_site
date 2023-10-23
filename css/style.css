@@ -584,7 +584,7 @@ header a:hover {
   height: 40px;
   border-radius: 10px;
   border: solid 3px #2D5E5E;
-  background-color: #2D5E5E;
+  background-color: transparent;
   color: white;
   font-family: Montserrat;
   font-size: 18px;
@@ -594,7 +594,7 @@ header a:hover {
   text-align: center;
 }
 .about__button-block button:hover {
-  background-color: transparent;
+  background-color: #2D5E5E;
 }
 
 .background-image {
