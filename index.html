@@ -98,5 +98,35 @@
         <img src="./static/img/about.webp" alt="about" />
       </section>
     </section>
+
+    <section class="booking-form center">
+      <h5>Записаться на прием</h5>
+      <section class="booking-form__input">
+        <input id="name" name="name" type="text" placeholder="Ваше имя *" />
+        <input
+          id="phone"
+          name="phone"
+          type="text"
+          placeholder="Ваш телефон *"
+        />
+        <select id="topic" name="topic">
+          <option value="Тема встречи *" disabled selected>
+            Тема встречи *
+          </option>
+          <option value="Личные консультации">Личные консультации</option>
+          <option value="Семейная терапия">Семейная терапия</option>
+          <option value="Сенситивные группы">Сенситивные группы</option>
+        </select>
+        <textarea id="message" name="message" placeholder="Пожелания">
+          Пожелания
+        </textarea>
+      </section>
+      <div class="booking-form__policy">
+        <input class="booking-form__policy_checkbox" type="checkbox" />
+        <span>Я согласен с политикой конфиденциальности</span>
+      </div>
+
+      <button class="center">Отправить</button>
+    </section>
   </body>
 </html>

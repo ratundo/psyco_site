@@ -427,9 +427,9 @@ template {
   font-display: swap;
 }
 body {
-  max-width: 1440px;
   margin: 0;
   padding: 0;
+  display: grid;
 }
 body h1, body h2, body h3, body h4, body h5, body h6 {
   font-family: Oswald;
@@ -613,6 +613,121 @@ header a:hover {
 .about__right img {
   width: 494.94px;
   height: 330px;
+}
+
+.booking-form {
+  margin-top: 120px;
+  margin-bottom: 60px;
+  display: grid;
+  gap: 50px;
+  justify-content: center;
+}
+.booking-form .booking-form__input {
+  display: grid;
+  grid-template-areas: "name message" "phone message" "topic message";
+  grid-column-gap: 50px;
+  grid-row-gap: 30px;
+  justify-content: center;
+}
+.booking-form .booking-form__input input[id=name] {
+  grid-area: name;
+}
+.booking-form .booking-form__input input[id=phone] {
+  grid-area: phone;
+}
+.booking-form .booking-form__input input[id=topic] {
+  grid-area: topic;
+}
+.booking-form .booking-form__input textarea[id=message] {
+  grid-area: message;
+  padding-top: 8px;
+  padding-left: 0px;
+}
+.booking-form h5 {
+  grid-area: "h5";
+  font-size: 48px;
+  line-height: 72px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: black;
+}
+.booking-form input[type=text], .booking-form select, .booking-form option, .booking-form textarea {
+  width: 369px;
+  min-height: 40px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border: 1px solid #000;
+  color: #000;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 8px 8px 8px 20px;
+}
+.booking-form input[type=text]::placeholder, .booking-form select::placeholder, .booking-form option::placeholder, .booking-form textarea::placeholder {
+  color: #000;
+  text-align: left;
+  top: 8px;
+  left: 20px;
+}
+.booking-form select {
+  width: 399px;
+  height: 56px;
+  padding: 8px 8px 8px 15px;
+}
+.booking-form .booking-form__policy {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.booking-form .booking-form__policy span {
+  color: #2D5E5E;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+}
+.booking-form .booking-form__policy .booking-form__policy_checkbox {
+  width: 15.046px;
+  height: 15px;
+  flex-shrink: 0;
+  margin: 0px;
+}
+.booking-form .booking-form__policy input[type=checkbox] {
+  display: grid;
+  place-content: center;
+  -webkit-appearance: none;
+  border: solid 1px #2D5E5E;
+  appearance: none;
+}
+.booking-form .booking-form__policy input[type=checkbox]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em #2D5E5E;
+}
+.booking-form .booking-form__policy input[type=checkbox]:checked::before {
+  transform: scale(1);
+}
+.booking-form button {
+  width: 250px;
+  height: 40px;
+  border-radius: 10px;
+  border: 0;
+  background: #2D5E5E;
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=style.css.map */
